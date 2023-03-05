@@ -106,7 +106,7 @@ local gsub,gmatch,split,sub,len = string.gsub,string.gmatch,string.split,string.
 local cf,angles,eulerXYZ = CFrame.new,CFrame.Angles,CFrame.fromEulerAnglesXYZ
 
 local player = owner
-local character = script.Parent
+local character = player.Character
 
 local humanoid = character.Humanoid
 local primary = character.PrimaryPart
@@ -114,8 +114,6 @@ local primary = character.PrimaryPart
 local attack1cd,attack2cd = false,false
 
 local ev = lib.Create("RemoteEvent",character,{}) 
-
-character = script.Parent
 
 NLS([[
 local doo = game.Players.LocalPlayer.Character.RemoteEvent
